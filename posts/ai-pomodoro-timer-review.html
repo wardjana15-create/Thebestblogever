@@ -26,63 +26,85 @@
   </script>
 </head>
 <body>
-  <nav>
-    <a href="../index.html">← Home</a>
-  </nav>
 
-  <article>
-    <h1>Best AI Pomodoro Timer Apps in 2025 (Top 7 Tested)</h1>
-    <p><time datetime="2025-09-07">Sep 7, 2025</time> – 8 min read</p>
+<!-- nav -->
+<div id="nav-goes-here"></div>
+<script>
+fetch('../nav.html').then(r=>r.text()).then(t=>{
+  document.getElementById('nav-goes-here').replaceWith(
+    document.importNode(
+      new DOMParser().parseFromString(t,'text/html')
+                    .getElementById('tmpl-nav').content,
+      true
+    )
+  );
+});
+</script>
 
-    <h2>Quick Look: Our 3 Winners</h2>
-    <ol>
-      <li><strong>FocusFlow AI</strong> – best for Android & WearOS</li>
-      <li><strong>PomoGenius</strong> – best free tier with unlimited sessions</li>
-      <li><strong>DeepWork Buddy</strong> – best for teams & shared analytics</li>
-    </ol>
+<main>
+  <h1>Best AI Pomodoro Timer Apps in 2025 (Top 7 Tested)</h1>
+  <p><time datetime="2025-09-07">Sep 7, 2025</time> – 8 min read</p>
 
-    <h2>Why an AI Pomodoro Timer?</h2>
-    <p>Traditional 25-minute blocks ignore your <em>actual</em> attention span. New AI timers analyze keystroke pauses, mouse movement and even front-camera eye-blink rate to adjust session length on the fly. Result: 18 % more tasks finished per day in our 30-user test.</p>
+  <h2>Quick Look: Our 3 Winners</h2>
+  <ol>
+    <li><strong>FocusFlow AI</strong> – best for Android & WearOS</li>
+    <li><strong>PomoGenius</strong> – best free tier with unlimited sessions</li>
+    <li><strong>DeepWork Buddy</strong> – best for teams & shared analytics</li>
+  </ol>
 
-    <h2>How We Tested</h2>
-    <p>We used a Samsung Galaxy A24 on Android 14 and a 100 Mbps Wi-Fi connection. Each app ran for 3 working days (9 hours). Metrics: session completion %, distraction alerts, battery drain, and subjective flow score.</p>
+  <h2>Why an AI Pomodoro Timer?</h2>
+  <p>Traditional 25-minute blocks ignore your <em>actual</em> attention span. New AI timers analyze keystroke pauses, mouse movement and even front-camera eye-blink rate to adjust session length on the fly. Result: 18 % more tasks finished per day in our 30-user test.</p>
 
-    <h2>Detailed Reviews</h2>
+  <h2>How We Tested</h2>
+  <p>We used a Samsung Galaxy A24 on Android 14 and a 100 Mbps Wi-Fi connection. Each app ran for 3 working days (9 hours). Metrics: session completion %, distraction alerts, battery drain, and subjective flow score.</p>
 
-    <section>
-      <h3 id="focusflow">1. FocusFlow AI – 9.2/10</h3>
-      <p><strong>Price:</strong> free / Pro $3.99/mo</p>
-      <p><strong>Passage ranking snippet:</strong> FocusFlow AI extended our average deep-work block from 25 min to 34 min without extra fatigue.</p>
-      <ul>
-        <li>Learns in 3 sessions, integrates with Google Calendar</li>
-        <li>Ads on free tier (good for AdSense RPM later)</li>
-      </ul>
-    </section>
+  <h2>Detailed Reviews</h2>
 
-    <section>
-      <h3 id="pomogenius">2. PomoGenius – 8.7/10</h3>
-      <p>100 % free, open-source, no account needed. Slightly shorter AI calibration (2 days). Export to CSV.</p>
-    </section>
+  <section>
+    <h3 id="focusflow">1. FocusFlow AI – 9.2/10</h3>
+    <p><strong>Price:</strong> free / Pro $3.99/mo</p>
+    <p><strong>Passage ranking snippet:</strong> FocusFlow AI extended our average deep-work block from 25 min to 34 min without extra fatigue.</p>
+    <ul>
+      <li>Learns in 3 sessions, integrates with Google Calendar</li>
+      <li>Ads on free tier (good for AdSense RPM later)</li>
+    </ul>
+  </section>
 
-    <section>
-      <h3 id="deepwork">3. DeepWork Buddy – 8.5/10</h3>
-      <p>Best for remote teams. Real-time leaderboard sparks competition. $5/user/mo.</p>
-    </section>
+  <section>
+    <h3 id="pomogenius">2. PomoGenius – 8.7/10</h3>
+    <p>100 % free, open-source, no account needed. Slightly shorter AI calibration (2 days). Export to CSV.</p>
+  </section>
 
-    <h2>FAQ</h2>
-    <dl>
-      <dt>Do AI Pomodoro timers sell my data?</dt>
-      <dd>Most free apps monetize with ads, not data resale. Always check the privacy policy.</dd>
-      <dt>Can I use these on iPhone?</dt>
-      <dd>FocusFlow and DeepWork have iOS betas; PomoGenius is Android-only for now.</dd>
-    </dl>
+  <section>
+    <h3 id="deepwork">3. DeepWork Buddy – 8.5/10</h3>
+    <p>Best for remote teams. Real-time leaderboard sparks competition. $5/user/mo.</p>
+  </section>
 
-    <h2>Bottom Line</h2>
-    <p>If you want the smartest timer that literally <strong>grows attention span with you</strong>, download FocusFlow AI today. For a 100 % free alternative, PomoGenius is unbeatable.</p>
-  </article>
+  <h2>FAQ</h2>
+  <dl>
+    <dt>Do AI Pomodoro timers sell my data?</dt>
+    <dd>Most free apps monetize with ads, not data resale. Always check the privacy policy.</dd>
+    <dt>Can I use these on iPhone?</dt>
+    <dd>FocusFlow and DeepWork have iOS betas; PomoGenius is Android-only for now.</dd>
+  </dl>
 
-  <footer>
-    <small><a href="../index.html">← Back to home</a></small>
-  </footer>
+  <h2>Bottom Line</h2>
+  <p>If you want the smartest timer that literally <strong>grows attention span with you</strong>, download FocusFlow AI today. For a 100 % free alternative, PomoGenius is unbeatable.</p>
+</main>
+
+<!-- footer -->
+<div id="footer-goes-here"></div>
+<script>
+fetch('../footer.html').then(r=>r.text()).then(t=>{
+  document.getElementById('footer-goes-here').replaceWith(
+    document.importNode(
+      new DOMParser().parseFromString(t,'text/html')
+                    .getElementById('tmpl-footer').content,
+      true
+    )
+  );
+});
+</script>
+
 </body>
 </html>
