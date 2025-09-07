@@ -1,0 +1,41 @@
+<!-- nav.html – injected into every page via fetch (no JS framework) -->
+<template id="tmpl-nav">
+<style>
+/* critical above-fold nav CSS – 0.7 kB */
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:0.5rem;
+  padding:0.75rem 1rem;
+  background:#ffffff;
+  border-bottom:1px solid #e5e7eb;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+nav a{
+  font-size:1rem;
+  line-height:1.2;
+  padding:0.5rem 0.75rem;
+  color:#111827;
+  text-decoration:none;
+  border-radius:0.375rem;
+  min-height:48px; /* Google mobile tap-target */
+  display:inline-flex;
+  align-items:center;
+}
+nav a:hover{background:#f3f4f6}
+/* hamburger becomes tabs on <480 px */
+@media(max-width:480px){
+  nav{justify-content:space-between}
+  nav a{flex:1 1 auto;text-align:center;font-size:0.875rem}
+}
+</style>
+<nav aria-label="Main">
+  <a href="./">Home</a>
+  <a href="./categories/ai-timers.html">AI Timers</a>
+  <a href="./categories/ai-planners.html">AI Planners</a>
+  <a href="./categories/ai-habit-trackers.html">Habit Trackers</a>
+  <a href="./about.html">About</a>
+</nav>
+</template>
