@@ -18,6 +18,7 @@
 </head>
 <body>
 
+<!-- nav -->
 <div id="nav-goes-here"></div>
 <script>
 fetch('../nav.html').then(r=>r.text()).then(t=>{
@@ -32,19 +33,24 @@ fetch('../nav.html').then(r=>r.text()).then(t=>{
 </script>
 
 <main>
-  <h1>AI Planner Apps</h1>
-  <p>Smart planners that build your perfect day—while you sip coffee.</p>
+  <!-- ===== CHANGE ONLY THESE 2 LINES PER CATEGORY ===== -->
+  <h1>AI Timer Tools</h1>
+  <p>Timers that learn <em>your</em> perfect focus length—reviewed, ranked and ready to try.</p>
+  <!-- =================================================== -->
 
   <section>
     <h2>Latest Posts</h2>
     <ul class="post-list">
       <li>
-        <em>Coming soon:</em> Notion AI vs. Motion vs. SkedPal – which auto-scheduler wins?
+        <a href="../posts/ai-pomodoro-timer-review.html">AI Pomodoro Timer Apps Compared (2025)</a>
+        <span>— 7 timers tested, 3 winners</span>
       </li>
+      <!-- future posts go here -->
     </ul>
   </section>
 </main>
 
+<!-- footer -->
 <div id="footer-goes-here"></div>
 <script>
 fetch('../footer.html').then(r=>r.text()).then(t=>{
