@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Terms of Service – AI Flow Kit</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Terms and conditions for using AI Flow Kit.">
+  <link rel="canonical" href="https://aiflowkit.xyz/terms.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- nav injection -->
+<div id="nav-goes-here"></div>
+<script>
+fetch('./nav.html').then(r=>r.text()).then(t=>{
+  document.getElementById('nav-goes-here').replaceWith(
+    document.importNode(
+      new DOMParser().parseFromString(t,'text/html')
+                    .getElementById('tmpl-nav').content,
+      true
+    )
+  );
+});
+</script>
+
+<main>
+  <h1>Terms of Service</h1>
+  <p><strong>Last updated:</strong> 07 Sep 2025</p>
+
+  <h2>1. Acceptance</h2>
+  <p>By accessing AI Flow Kit you agree to these terms and all applicable laws.</p>
+
+  <h2>2. Content</h2>
+  <p>All content is for informational purposes only. We are not responsible for any loss or damage from reliance on the material.</p>
+
+  <h2>3. Affiliate Disclosure</h2>
+  <p>Some links are affiliate links. We earn a commission at no additional cost to you.</p>
+
+  <h2>4. Google AdSense</h2>
+  <p>Third-party vendors, including Google, use cookies to serve ads based on your prior visits. You can opt out at <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ad Settings</a>.</p>
+
+  <h2>5. Governing Law</h2>
+  <p>These terms are governed by the laws of the United States and the State of California.</p>
+
+  <h2>6. Contact</h2>
+  <p>Email: legal [at] aiflowkit.xyz</p>
+</main>
+
+<!-- footer injection -->
+<div id="footer-goes-here"></div>
+<script>
+fetch('./footer.html').then(r=>r.text()).then(t=>{
+  document.getElementById('footer-goes-here').replaceWith(
+    document.importNode(
+      new DOMParser().parseFromString(t,'text/html')
+                    .getElementById('tmpl-footer').content,
+      true
+    )
+  );
+});
+</script>
+
+</body>
+</html>
